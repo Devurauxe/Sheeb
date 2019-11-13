@@ -7,6 +7,9 @@ TagManager:
   - Red_Sheeb
   - Blue_Sheeb
   - Green_Sheeb
+  - Red_Sheeb_Point
+  - Blue_Sheeb_Point
+  - Green_Sheeb_Point
   layers:
   - Default
   - TransparentFX
