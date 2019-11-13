@@ -9,6 +9,7 @@ public class Herd_Controller : MonoBehaviour
 
     public Herd_Behavior h_Behavior;
 
+    public int spawn_Count;
     const float sheeb_Density = 0.08f;
 
     public float drive_Factor;
@@ -27,6 +28,13 @@ public class Herd_Controller : MonoBehaviour
         square_Max_Speed = Mathf.Pow(max_Speed, 2f);
         square_Neighbor_Rad = Mathf.Pow(neighbor_Radius, 2f);
         square_Avoidance_Rad = square_Neighbor_Rad * avoidance_Rad_Mult * avoidance_Rad_Mult;
+
+        for (int i = 0; i < spawn_Count; i++)
+        {
+            Sheep_Controller sheeb = Instantiate(sheebPrefab, Random.insideUnitCircle * spawn_Count * sheeb_Density, Quaternion.Euler(Vector3.forward * Random.Range(0f, 360f)), transform);
+            sheeb.name = "Sheeb " + i;
+            sheebs.Add(sheeb);
+        }
     }
 
     // Update is called once per frame

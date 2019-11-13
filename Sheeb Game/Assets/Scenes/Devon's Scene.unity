@@ -234,11 +234,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sheebPrefab: {fileID: -4132312167592216655, guid: 45fc0432f4595b046acffc820af13801,
     type: 3}
-  h_Behavior: {fileID: 0}
-  drive_Factor: 0
-  max_Speed: 0
-  neighbor_Radius: 0
-  avoidance_Rad_Mult: 0
+  h_Behavior: {fileID: 11400000, guid: 5ce185aae0d34b244b1e5ed4ba3017b6, type: 2}
+  spawn_Count: 20
+  drive_Factor: 10
+  max_Speed: 5
+  neighbor_Radius: 1.5
+  avoidance_Rad_Mult: 0.5
 --- !u!4 &1592955630
 Transform:
   m_ObjectHideFlags: 0
@@ -247,9 +248,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592955628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8708341, y: -0.028811816, z: -1.5414038}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1859888726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1859888727}
+  m_Layer: 0
+  m_Name: Herd_Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1859888727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859888726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3265287, y: 1.49, z: -105.18001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

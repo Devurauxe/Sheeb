@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Red
-  - Blue
-  - Green
+  - Red_Sheeb
+  - Blue_Sheeb
+  - Green_Sheeb
   layers:
   - Default
   - TransparentFX
