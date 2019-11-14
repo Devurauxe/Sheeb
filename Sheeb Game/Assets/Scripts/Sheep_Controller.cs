@@ -42,6 +42,8 @@ public class Sheep_Controller : MonoBehaviour
         sheeb_Collider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         sheebScale = transform.localScale.x; //Grab arbitrary scale value from default sheeb
+
+        commanded = false;
     }
 
     // Move the sheeb forward
