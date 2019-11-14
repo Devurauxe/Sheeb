@@ -249,4 +249,4 @@ MonoBehaviour:
   tile: {fileID: 668060270067221272, guid: 65fbacc31570194478bca09a7a5df6ee, type: 3}
   map_Width: 5
   map_Height: 5
-  rainbow_Chance: 0
+  rainbow_Chance: 1

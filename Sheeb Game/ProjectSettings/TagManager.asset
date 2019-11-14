@@ -10,6 +10,10 @@ TagManager:
   - Red_Sheeb_Point
   - Blue_Sheeb_Point
   - Green_Sheeb_Point
+  - Red_Grass
+  - Blue_Grass
+  - Green_Grass
+  - Rainbow_Grass
   layers:
   - Default
   - TransparentFX
