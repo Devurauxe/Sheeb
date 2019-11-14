@@ -10,7 +10,7 @@ public class Herd_Controller : MonoBehaviour
     public Herd_Behavior h_Behavior;
 
     public int spawn_Count;
-    const float sheeb_Density = 0.08f;
+    const float sheeb_Density = 0.02f;
 
     public float drive_Factor;
     public float max_Speed;
@@ -43,6 +43,7 @@ public class Herd_Controller : MonoBehaviour
         foreach (Sheep_Controller sheeb in sheebs)
         {
             List<Transform> context = GetNearbyObjects(sheeb);
+
             Vector2 move = h_Behavior.Calculate_Move(sheeb, context, this);
 
             move *= drive_Factor;
@@ -63,10 +64,33 @@ public class Herd_Controller : MonoBehaviour
         {
             if (col != sheeb.SheebCollider && col.gameObject.tag.Contains("Sheeb"))
             {
-                s_Context.Add(col.transform);
+                if (sheeb.gameObject.CompareTag("Red_Sheeb") && col.gameObject.tag.Contains("Red"))
+                    s_Context.Add(col.transform);
+                else if (sheeb.gameObject.CompareTag("Blue_Sheeb") && col.gameObject.tag.Contains("Blue"))
+                    s_Context.Add(col.transform);
+                else if (sheeb.gameObject.CompareTag("Green_Sheeb") && col.gameObject.tag.Contains("Green"))
+                    s_Context.Add(col.transform);
             }
         }
 
         return s_Context;
+    }
+
+    void Check_Herd()
+    {
+        foreach (Sheep_Controller sheeb in sheebs)
+        {
+            List<Transform> context = GetNearbyObjects(sheeb);
+
+            foreach (Transform sheeb_T in context)
+            {
+                if (sheeb_T.GetComponent<Sheep_Controller>() != null && !sheeb_T.GetComponent<Sheep_Controller>().in_Area && sheeb_T.gameObject.CompareTag(sheeb.tag))
+                {
+                    return;
+                }
+            }
+
+            sheeb.keep_Moving = false;
+        }
     }
 }
