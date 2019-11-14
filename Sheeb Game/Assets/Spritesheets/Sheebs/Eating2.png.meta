@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 58e757de68d2efc48a571bc0811c90d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3864415098869800164
+    second: Eating2_0
+  - first:
+      213: 7384836802950965405
+    second: Eating2_1
+  - first:
+      213: 4647743167610290305
+    second: Eating2_2
+  - first:
+      213: -8685301036155310291
+    second: Eating2_3
+  - first:
+      213: 777352896189177478
+    second: Eating2_4
+  - first:
+      213: -3197972082872810374
+    second: Eating2_5
+  - first:
+      213: -1960041226873467287
+    second: Eating2_6
+  - first:
+      213: 775806079374701571
+    second: Eating2_7
+  - first:
+      213: 7516207431861981207
+    second: Eating2_8
+  - first:
+      213: 2325253354746942200
+    second: Eating2_9
+  - first:
+      213: 7244384244759572582
+    second: Eating2_10
+  - first:
+      213: 3603993718306875627
+    second: Eating2_11
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Eating2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3078
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f1cbb1c7ed61b46a1379fb49977ace
+      internalID: 3864415098869800164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating2_1
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 3078
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d683338919cd814096b147348ce759e
+      internalID: 7384836802950965405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating2_2
+      rect:
+        serializedVersion: 2
+        x: 3742
+        y: 3078
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef1dcecc4d4e9447b51746c1c848879
+      internalID: 4647743167610290305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating2_3
+      rect:
+        serializedVersion: 2
+        x: 5613
+        y: 3078
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ef521f04c40e1459da7aee30e8cdb8
+      internalID: -8685301036155310291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1539
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba320467c7cae794e8cc0e4c3e611fdd
+      internalID: 777352896189177478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating2_5
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 1539
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e259ba2e4713743823408ae17514cc
+      internalID: -3197972082872810374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating2_6
+      rect:
+        serializedVersion: 2
+        x: 3742
+        y: 1539
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70a9d3185880c34c8fb0aad0e60fa47
+      internalID: -1960041226873467287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating2_7
+      rect:
+        serializedVersion: 2
+        x: 5613
+        y: 1539
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec2fa97b4824044b88a09e842730f43
+      internalID: 775806079374701571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca26d5ac66e12444a2d3ff6054a2bd5
+      internalID: 7516207431861981207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating2_9
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 0
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5ab7578a41209499a387cb6a236aac
+      internalID: 2325253354746942200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating2_10
+      rect:
+        serializedVersion: 2
+        x: 3742
+        y: 0
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a22e29543848f9498ad5ad692116a47
+      internalID: 7244384244759572582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating2_11
+      rect:
+        serializedVersion: 2
+        x: 5613
+        y: 0
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b76c6d4f5a33004fb5354b5dbebda62
+      internalID: 3603993718306875627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
