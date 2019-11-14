@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Herd_Controller : MonoBehaviour
 {
@@ -23,6 +24,15 @@ public class Herd_Controller : MonoBehaviour
     float square_Avoidance_Rad;
     public float SquareAvoidRadius { get { return square_Avoidance_Rad; } }
 
+    [Header("Sheeb Counter Text:")]
+    public TextMeshProUGUI red_Sheeb_T;
+    public TextMeshProUGUI blue_Sheeb_T;
+    public TextMeshProUGUI green_Sheeb_T;
+
+    private int red_Sheeb_Count;
+    private int blue_Sheeb_Count;
+    private int green_Sheeb_Count;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +45,19 @@ public class Herd_Controller : MonoBehaviour
             Sheep_Controller sheeb = Instantiate(sheebPrefab, Random.insideUnitCircle * spawn_Count * sheeb_Density, Quaternion.Euler(Vector3.forward * Random.Range(0f, 360f)), transform);
             sheeb.name = "Sheeb " + i;
             sheebs.Add(sheeb);
+
+            switch (sheeb.tag)
+            {
+                case "Red_Sheeb":
+                    red_Sheeb_Count++;
+                    break;
+                case "Blue_Sheeb":
+                    blue_Sheeb_Count++;
+                    break;
+                case "Green_Sheeb":
+                    green_Sheeb_Count++;
+                    break;
+            }
         }
     }
 
@@ -58,6 +81,10 @@ public class Herd_Controller : MonoBehaviour
                  { sheeb.gameObject.GetComponentInChildren<Animator>().SetBool("Moving", true);  } //Tell sheeb to bounce when moving (fast enough)
             else { sheeb.gameObject.GetComponentInChildren<Animator>().SetBool("Moving", false); } //Otherwise put sheeb in standing animation
         }
+
+        red_Sheeb_T.text = red_Sheeb_Count.ToString("00");
+        blue_Sheeb_T.text = blue_Sheeb_Count.ToString("00");
+        green_Sheeb_T.text = green_Sheeb_Count.ToString("00");
     }
 
     List<Transform> GetNearbyObjects(Sheep_Controller sheeb)
