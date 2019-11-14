@@ -14,6 +14,8 @@ public class SheebMovementTester : MonoBehaviour
         if (GetComponent<Animator>().GetBool("InAir") == true)
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(sheebSbeed, 0);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(0, sheebSbeed);
+            //GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-20, 20), Random.Range(-20, 20)));
         }
         else
         {
