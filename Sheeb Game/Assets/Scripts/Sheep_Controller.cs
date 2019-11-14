@@ -39,7 +39,7 @@ public class Sheep_Controller : MonoBehaviour
 
         sheeb_Collider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
-        sheebScale = transform.localScale.y; //Grab arbitrary scale value from default sheeb
+        sheebScale = transform.localScale.x; //Grab arbitrary scale value from default sheeb
     }
 
     // Move the sheeb forward
@@ -53,11 +53,11 @@ public class Sheep_Controller : MonoBehaviour
 
             //Visual Positional Update:
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y); //Simulate depth
-            if (changeDirectionTime <= (timeSinceDChange + Time.realtimeSinceStartup))
+            if (changeDirectionTime <= (Time.realtimeSinceStartup - timeSinceDChange))
             {
                 float prevScale = transform.localScale.x; //Initialize memory variable
                 if (velocity.x > 0) { transform.localScale = Vector3.one * sheebScale; } else { transform.localScale = new Vector3(-1, 1, 1) * sheebScale; } //Change scale (if necessary)
-                if (prevScale != transform.localScale.x) { timeSinceDChange += Time.realtimeSinceStartup; } //Increment time tracker if scale was changed
+                if (prevScale != transform.localScale.x) { timeSinceDChange = Time.realtimeSinceStartup; } //Increment time tracker if scale was changed
             }
         }
     }
