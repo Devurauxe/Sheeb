@@ -18,22 +18,22 @@ public class Sheep_Controller : MonoBehaviour
     public Collider2D SheebCollider { get { return sheeb_Collider; } } // Get method for sheeb collider
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         // Randomly determine the sheeb's tag and color
         switch (Random.Range(0, 3))
         {
             case 0:
                 tag = "Red_Sheeb";
-                GetComponentInChildren<SpriteRenderer>().color = Color.red;
+                GetComponentInChildren<SpriteRenderer>().color = new Color32(255, 102, 102, 255);
                 break;
             case 1:
                 tag = "Blue_Sheeb";
-                GetComponentInChildren<SpriteRenderer>().color = Color.blue;
+                GetComponentInChildren<SpriteRenderer>().color = new Color32(102, 214, 255, 255);
                 break;
             case 2:
                 tag = "Green_Sheeb";
-                GetComponentInChildren<SpriteRenderer>().color = Color.green;
+                GetComponentInChildren<SpriteRenderer>().color = new Color32(102, 255, 110, 255);
                 break;
         }
 
@@ -64,8 +64,13 @@ public class Sheep_Controller : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Set the sheeb's to ignore the collision between other sheebs
+        // Set the sheeb's to ignore the collision between other sheebs and the player
         if (collision.gameObject.tag.Contains("Sheeb"))
             Physics2D.IgnoreCollision(sheeb_Collider, collision.collider);
+    }
+
+    public void Eat()
+    {
+
     }
 }
