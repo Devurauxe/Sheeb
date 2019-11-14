@@ -75,4 +75,22 @@ public class Herd_Controller : MonoBehaviour
 
         return s_Context;
     }
+
+    void Check_Herd()
+    {
+        foreach (Sheep_Controller sheeb in sheebs)
+        {
+            List<Transform> context = GetNearbyObjects(sheeb);
+
+            foreach (Transform sheeb_T in context)
+            {
+                if (sheeb_T.GetComponent<Sheep_Controller>() != null && !sheeb_T.GetComponent<Sheep_Controller>().in_Area && sheeb_T.gameObject.CompareTag(sheeb.tag))
+                {
+                    return;
+                }
+            }
+
+            sheeb.keep_Moving = false;
+        }
+    }
 }

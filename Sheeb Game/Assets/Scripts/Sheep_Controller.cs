@@ -10,7 +10,8 @@ public class Sheep_Controller : MonoBehaviour
 
     public Transform target;
 
-    bool keep_Moving = true;
+    internal bool keep_Moving = true;
+    internal bool in_Area;
 
     public Collider2D SheebCollider { get { return sheeb_Collider; } }
 
@@ -34,6 +35,7 @@ public class Sheep_Controller : MonoBehaviour
         }
 
         sheeb_Collider = GetComponent<Collider2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     public void Move(Vector2 velocity)
@@ -53,11 +55,11 @@ public class Sheep_Controller : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
         if (collision.gameObject.tag.Contains("Sheeb_Point"))
-        {
-            Vector3 dist_Center = collision.transform.position - transform.position;
-
-
-        }
+            keep_Moving = true;
     }
 }
