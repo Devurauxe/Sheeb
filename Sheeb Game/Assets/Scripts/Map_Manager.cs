@@ -37,6 +37,9 @@ public class Map_Manager : MonoBehaviour
 
                 int color = Random.Range(0, 3);
 
+                if (Random.Range(0.0f, 100.0f) < rainbow_Chance)
+                    color = 3;
+
                 switch (color)
                 {
                     case 0:
@@ -50,6 +53,10 @@ public class Map_Manager : MonoBehaviour
                     case 2:
                         new_Tile.GetComponent<SpriteRenderer>().color = Color.green;
                         new_Tile.tag = "Green_Grass";
+                        break;
+                    case 3:
+                        new_Tile.GetComponent<SpriteRenderer>().color = Color.magenta;
+                        new_Tile.tag = "Rainbow_Grass";
                         break;
                 }
 
