@@ -6,6 +6,8 @@ public class Grass_Manager : MonoBehaviour
 {
     internal List<Sheep_Controller> eating_Sheebs;
 
+    public float grass_Left;
+
     public void Get_Sheebs()
     {
         Collider2D[] sheebs = Physics2D.OverlapBoxAll(transform.position, GetComponent<BoxCollider2D>().size, 0f);
@@ -19,6 +21,9 @@ public class Grass_Manager : MonoBehaviour
 
     public void Eat_Grass()
     {
-
+        foreach (Sheep_Controller sheeb in eating_Sheebs)
+        {
+            sheeb.GetComponent<Animator>().SetBool("Eating", true);
+        }
     }
 }

@@ -47,7 +47,6 @@ public class Sheep_Controller : MonoBehaviour
     // Move the sheeb forward
     public void Move(Vector2 velocity)
     {   
-
         if (keep_Moving && GetComponentInChildren<Animator>().GetBool("InAir") == true && !commanded) //Animator check added for bounces
         {
             transform.up = velocity;
