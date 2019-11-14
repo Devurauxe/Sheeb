@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Map_Manager : MonoBehaviour
 {
+    private bool map_Generated;
+
     [Header("Map Settings:")]
     public GameObject tile;
     public int map_Width;
@@ -12,31 +14,51 @@ public class Map_Manager : MonoBehaviour
     [Header("Tile Settings:")]
     [Range(0.0f, 100.0f)] public float rainbow_Chance;
 
-    private void Start()
-    {
-    }
-
     // Update is called once per frame
     void Update()
     {
-        
+        if (!map_Generated)
+        {
+            Generate_Map();
+            map_Generated = true;
+        }
     }
 
     void Generate_Map()
     {
-        float spacing_X = 0f;
-        float spacing_Y = 0f;
+        float spacing_X = (-tile.transform.GetComponent<BoxCollider2D>().size.x * (map_Width / 2f)) + (tile.transform.GetComponent<BoxCollider2D>().size.x / 2f);
+        float spacing_Y = (tile.transform.GetComponent<BoxCollider2D>().size.y * (map_Height / 2f)) - (tile.transform.GetComponent<BoxCollider2D>().size.y / 2f);
 
         for (int i = 0; i < map_Width; i++)
         {
             for (int j = 0; j < map_Height; j++)
             {
                 GameObject new_Tile = Instantiate(tile, transform);
+
+                int color = Random.Range(0, 3);
+
+                switch (color)
+                {
+                    case 0:
+                        new_Tile.GetComponent<SpriteRenderer>().color = Color.red;
+                        new_Tile.tag = "Red_Grass";
+                        break;
+                    case 1:
+                        new_Tile.GetComponent<SpriteRenderer>().color = Color.blue;
+                        new_Tile.tag = "Blue_Grass";
+                        break;
+                    case 2:
+                        new_Tile.GetComponent<SpriteRenderer>().color = Color.green;
+                        new_Tile.tag = "Green_Grass";
+                        break;
+                }
+
                 new_Tile.transform.position += new Vector3(spacing_X, spacing_Y, 0f);
-                spacing_X += tile.transform.localScale.x;
+                spacing_X += tile.transform.GetComponent<BoxCollider2D>().size.x;
             }
 
-            spacing_Y += tile.transform.localScale.y;
+            spacing_Y -= tile.transform.GetComponent<BoxCollider2D>().size.y;
+            spacing_X = (-tile.transform.GetComponent<BoxCollider2D>().size.x * (map_Width / 2f)) + (tile.transform.GetComponent<BoxCollider2D>().size.x / 2f);
         }
     }
 }
