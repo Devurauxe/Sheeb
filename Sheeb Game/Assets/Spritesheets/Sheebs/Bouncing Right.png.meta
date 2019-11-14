@@ -1,0 +1,451 @@
+fileFormatVersion: 2
+guid: b13578de2f3136441b44aa354e2b4aed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -659122922988577149
+    second: Bouncing Right_0
+  - first:
+      213: -6470807407284685609
+    second: Bouncing Right_1
+  - first:
+      213: -5957580977997387585
+    second: Bouncing Right_2
+  - first:
+      213: -5576540979759814939
+    second: Bouncing Right_3
+  - first:
+      213: -2122909571240695307
+    second: Bouncing Right_4
+  - first:
+      213: 8278846202427731776
+    second: Bouncing Right_5
+  - first:
+      213: -6650445236115806170
+    second: Bouncing Right_6
+  - first:
+      213: -7141932359667506547
+    second: Bouncing Right_7
+  - first:
+      213: 9181885526532763825
+    second: Bouncing Right_8
+  - first:
+      213: -8710227180297619181
+    second: Bouncing Right_9
+  - first:
+      213: -3546818710475858824
+    second: Bouncing Right_10
+  - first:
+      213: -5398443961896630556
+    second: Bouncing Right_11
+  - first:
+      213: 1765342320733466174
+    second: Bouncing Right_12
+  - first:
+      213: 417609497738047157
+    second: Bouncing Right_13
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bouncing Right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9234
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd61b100693d9a4f907776aa00a76d3
+      internalID: -659122922988577149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_1
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 9234
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691d3a495ab9f6946893746a75f9df0c
+      internalID: -6470807407284685609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7695
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6141388704c0dbb498a01cd7b039231a
+      internalID: -5957580977997387585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_3
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 7695
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a1f51c6d2b27b4e917d67778c69e73
+      internalID: -5576540979759814939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6156
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfc8fdada5e28847a29b89ab3c4a589
+      internalID: -2122909571240695307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_5
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 6156
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c68872c83968e54c9053ed28161ed60
+      internalID: 8278846202427731776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4617
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ea174ed7b9c7e47ab49145f932681e
+      internalID: -6650445236115806170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_7
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 4617
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00baf0872a34df94b8a1dccc356696f6
+      internalID: -7141932359667506547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3078
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f2255e036e2d548be0c011f5912c4a
+      internalID: 9181885526532763825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_9
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 3078
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b56ddf85ea6db4eac05eb1cb552fdc
+      internalID: -8710227180297619181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1539
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbcc107d86be4f459134c46c428b311
+      internalID: -3546818710475858824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_11
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 1539
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4839b405f5cd66947b8b1e6ca72a9405
+      internalID: -5398443961896630556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce4563d0d121ac4390ccc1bd83add0e
+      internalID: 1765342320733466174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Right_13
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 0
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82df9ec345d65474b9651c7c4ce5a56b
+      internalID: 417609497738047157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
