@@ -16,6 +16,7 @@ public class Herd_Controller : MonoBehaviour
     public float max_Speed;
     public float neighbor_Radius;
     public float avoidance_Rad_Mult;
+    public float standing_Threshold; //Once a sheeb's velocity goes below this point, they switch to their standing animation
 
     float square_Max_Speed;
     float square_Neighbor_Rad;
@@ -52,6 +53,10 @@ public class Herd_Controller : MonoBehaviour
                 move = move.normalized * max_Speed;
 
             sheeb.Move(move);
+
+            if (move.x >= standing_Threshold || move.y >= standing_Threshold)
+                 { sheeb.gameObject.GetComponentInChildren<Animator>().SetBool("Moving", true);  } //Tell sheeb to bounce when moving (fast enough)
+            else { sheeb.gameObject.GetComponentInChildren<Animator>().SetBool("Moving", false); } //Otherwise put sheeb in standing animation
         }
     }
 
@@ -84,7 +89,7 @@ public class Herd_Controller : MonoBehaviour
 
             foreach (Transform sheeb_T in context)
             {
-                if (sheeb_T.GetComponent<Sheep_Controller>() != null && !sheeb_T.GetComponent<Sheep_Controller>().in_Area && sheeb_T.gameObject.CompareTag(sheeb.tag))
+                if (sheeb_T.GetComponent<Sheep_Controller>() != null && sheeb_T.gameObject.CompareTag(sheeb.tag))
                 {
                     return;
                 }

@@ -67,6 +67,6 @@ public class Metronome : MonoBehaviour
 
         sheebAnimators.Clear(); //Clear animator list to prevent doubles
         for (int x = sheebs.Count; x > 0; x--)
-        { if (sheebs[x - 1].GetComponent<Animator>() != null) sheebAnimators.Add(sheebs[x - 1].GetComponent<Animator>()); } //Get each existing animator and add to list
+        { if (sheebs[x - 1].GetComponentInChildren<Animator>() != null) sheebAnimators.Add(sheebs[x - 1].GetComponentInChildren<Animator>()); } //Get each existing animator and add to list
     }
 }
