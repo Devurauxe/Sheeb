@@ -1,0 +1,451 @@
+fileFormatVersion: 2
+guid: 4ec1e2599f9e6324d95a09c1797939cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5699578206738768537
+    second: Bouncing Test2_0
+  - first:
+      213: 9204925957106304764
+    second: Bouncing Test2_1
+  - first:
+      213: 241965424892811740
+    second: Bouncing Test2_2
+  - first:
+      213: -2769201759449287230
+    second: Bouncing Test2_3
+  - first:
+      213: -290506724665308323
+    second: Bouncing Test2_4
+  - first:
+      213: 4819816255117582826
+    second: Bouncing Test2_5
+  - first:
+      213: 5323132517493416143
+    second: Bouncing Test2_6
+  - first:
+      213: -7751550309087585199
+    second: Bouncing Test2_7
+  - first:
+      213: -6924613119826380055
+    second: Bouncing Test2_8
+  - first:
+      213: 4965195303502594537
+    second: Bouncing Test2_9
+  - first:
+      213: -2876063120086280050
+    second: Bouncing Test2_10
+  - first:
+      213: 3195112828157542581
+    second: Bouncing Test2_11
+  - first:
+      213: -2418855924378997730
+    second: Bouncing Test2_12
+  - first:
+      213: -6157470121308682489
+    second: Bouncing Test2_13
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bouncing Test2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9234
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8092e4491a24da46ad7d9d294fa84e1
+      internalID: 5699578206738768537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_1
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 9234
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fe772ad0bd19941b49f1bc87da2c17
+      internalID: 9204925957106304764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7695
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14a9d628419f8b4eb5c483a9bd86414
+      internalID: 241965424892811740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_3
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 7695
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f591218f39c834246847002cb6281749
+      internalID: -2769201759449287230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6156
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7308935c1760b043a5b5673a65673c9
+      internalID: -290506724665308323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_5
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 6156
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ccf8ad7d44a174899734bbd0ed40b5
+      internalID: 4819816255117582826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4617
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c0045ed81798748acf26fe812cce65
+      internalID: 5323132517493416143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_7
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 4617
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d1db6a0de29d54581d29672efb9c4f
+      internalID: -7751550309087585199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3078
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2703be224d9c1a94cb7a6a2a6605d989
+      internalID: -6924613119826380055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_9
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 3078
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17932c296d4fd744c8b70defbb270248
+      internalID: 4965195303502594537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1539
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e033ff08deafb0749a0d7cec21cf1e67
+      internalID: -2876063120086280050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_11
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 1539
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5e5a8af7bc13146b62c4cde56d8129
+      internalID: 3195112828157542581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c811db30c2e58c040a5cb1d51578fc7a
+      internalID: -2418855924378997730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bouncing Test2_13
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 0
+        width: 1871
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633ddff22ff8b2743bd96fdf7476c98c
+      internalID: -6157470121308682489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

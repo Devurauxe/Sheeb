@@ -33,6 +33,10 @@ public class Metronome : MonoBehaviour
     private float timeSinceGrassBeat = 0; //How much time has passed since grassed beat
     private float timeSinceOffBeat; //How much time has passed since last offbeat
 
+    private string sheebWord;
+    public AudioClip testAudio;
+    public GameObject testerObject;
+
     void Start()
     {
         //Get Objects and Components:
@@ -64,6 +68,10 @@ public class Metronome : MonoBehaviour
         {
             musicStartTime = Time.realtimeSinceStartup; //Log when music starts playing
             audioSource.Play(); //TEMP: Play audio clip
+        }
+        if (Input.anyKeyDown == true)
+        {
+            /*TESTING AREA (Do not change!)*/                                                                                                                                                                                                                if (Input.GetKey(KeyCode.B) && sheebWord == null) { sheebWord = "B"; } else if (Input.GetKey(KeyCode.L) && sheebWord == "B") { sheebWord = "BL"; } else if (Input.GetKey(KeyCode.Y) && sheebWord == "BL") { sheebWord = "BLY"; } else if (Input.GetKey(KeyCode.A) && sheebWord == "BLY") { sheebWord = "BLYA"; } else if (Input.GetKey(KeyCode.T) && sheebWord == "BLYA") { sheebWord = "BLYAT"; TestThing(); }
         }
 
         if (audioSource.isPlaying == true || forceBeat) timeSinceBeat += Time.deltaTime; //Increment beat time
@@ -103,7 +111,13 @@ public class Metronome : MonoBehaviour
         for (int x = sheebs.Count; x > 0; x--)
         { if (sheebs[x - 1].GetComponentInChildren<Animator>() != null) sheebAnimators.Add(sheebs[x - 1].GetComponentInChildren<Animator>()); } //Get each existing animator and add to list
     }
-
+    private void TestThing()
+    {
+        beatsPerMinute = 115; audioSource.Stop(); audioSource.clip = testAudio; audioSource.Play();
+        GameObject flasheeb = Instantiate(testerObject); flasheeb.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+        for (int x = sheebs.Count; x > 0; x--) { sheebs[x - 1].GetComponent<SpriteRenderer>().color = Color.white; sheebs[x - 1].GetComponent<Animator>().runtimeAnimatorController = Resources.Load("testanimator") as RuntimeAnimatorController; }
+        for (int x = grassAnimators.Count; x > 0; x--) { SpriteRenderer oog = grassAnimators[x - 1].gameObject.GetComponent<SpriteRenderer>(); oog.color = Color.red; }
+    }
     private void GetGrass() //Populates grass list with all grass in scene
     {
         redGrassInScene = GameObject.FindGameObjectsWithTag("Red_Grass"); //Find all red sheebs
