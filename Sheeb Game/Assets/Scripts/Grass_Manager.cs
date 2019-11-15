@@ -5,17 +5,39 @@ using UnityEngine;
 public class Grass_Manager : MonoBehaviour
 {
     internal List<Sheep_Controller> eating_Sheebs = new List<Sheep_Controller>();
+    internal Animator[] grass_Tufts;
 
     public bool selected;
 
-    public float grass_Left;
+    bool eat_Started;
+    bool grass_Left = true;
+
+    private void Start()
+    {
+        grass_Tufts = GetComponentsInChildren<Animator>();
+
+        StartCoroutine(Grass_Eat());
+    }
 
     private void Update()
     {
         Get_Sheebs();
 
-        if (eating_Sheebs.Count > 0f)
+        foreach (Animator grass in grass_Tufts)
+        {
+            if (grass.GetInteger("Health") <= 0)
+            {
+                grass_Left = false;
+                eat_Started = false;
+                Stop_Eating();
+            }
+        }
+
+        if (eating_Sheebs.Count > 0f && grass_Left)
+        {
             Eat_Grass();
+            eat_Started = true;
+        }
     }
 
     public void Get_Sheebs()
@@ -35,7 +57,32 @@ public class Grass_Manager : MonoBehaviour
         {
             Destroy(sheeb.marker);
 
+            sheeb.GetComponentInChildren<Animator>().SetBool("Moving", false);
             sheeb.GetComponentInChildren<Animator>().SetBool("Eating", true);
+        }
+    }
+
+    public void Stop_Eating()
+    {
+        foreach (Sheep_Controller sheeb in eating_Sheebs)
+        {
+            sheeb.GetComponentInChildren<Animator>().SetBool("Moving", true);
+            sheeb.GetComponentInChildren<Animator>().SetBool("Eating", false);
+        }
+    }
+
+    public IEnumerator Grass_Eat()
+    {
+        while (true)
+        {
+            yield return new WaitUntil(() => eat_Started);
+
+            yield return new WaitForSeconds(2);
+
+            foreach (Animator grass_T in grass_Tufts)
+            {
+                grass_T.SetInteger("Health", grass_T.GetInteger("Health") - 20);
+            }
         }
     }
 }
