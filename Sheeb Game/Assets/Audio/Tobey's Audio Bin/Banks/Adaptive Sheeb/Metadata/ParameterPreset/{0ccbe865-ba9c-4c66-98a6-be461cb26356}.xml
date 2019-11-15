@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{0ccbe865-ba9c-4c66-98a6-be461cb26356}">
+		<property name="name">
+			<value>Munch Eat</value>
+		</property>
+		<relationship name="folder">
+			<destination>{55b53f26-1703-4da5-8a18-5e6d0f6074ca}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{fce8085e-1f0e-46f8-960d-be1ddd233824}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{fce8085e-1f0e-46f8-960d-be1ddd233824}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

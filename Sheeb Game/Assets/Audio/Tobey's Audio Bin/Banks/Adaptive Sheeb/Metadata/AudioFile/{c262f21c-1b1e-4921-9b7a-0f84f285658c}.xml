@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c262f21c-1b1e-4921-9b7a-0f84f285658c}">
+		<property name="assetPath">
+			<value>Eat 6.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.71918749999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{67905e04-3c88-4998-a581-448e19e604e2}</destination>
+		</relationship>
+	</object>
+</objects>
