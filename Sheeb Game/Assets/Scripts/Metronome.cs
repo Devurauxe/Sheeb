@@ -17,11 +17,13 @@ public class Metronome : MonoBehaviour
         GameObject[] redGrassInScene; //Initialize grass tracker
         GameObject[] blueGrassInScene; //Initialize grass tracker
         GameObject[] greenGrassInScene; //Initialize grass tracker
+    private Animator jonnyAnimator; //Jonny Sheep's animator
 
     [Header("Settings:")]
     public bool forceBeat; //When pulled true, beat will begin counting regardless of whether or not program knows music is playing
     public float startDelay; //How long to wait after playing song to begin first beat
     public float beatsPerMinute; //Tempo of given song
+    public float timeSignature; //I don't understand music
     public float bouncesPerBeat; //How many times each sheep will bounce per beat
     public float grassBouncesPerBeat; //How many times each grass will bounce per beat
     public float bounceSpeed; //How fast each part of each sheep bounce is
@@ -46,11 +48,13 @@ public class Metronome : MonoBehaviour
         GetGrass(); //Get any starting grass in scene
 
         //Initialize Offbeat
-        timeSinceOffBeat = (beatsPerMinute / (240 * bouncesPerBeat))/2; //Start halfway towards beat marker
+        timeSinceOffBeat = ((beatsPerMinute/(60 * timeSignature)) * bouncesPerBeat)/2; //Start halfway towards beat marker
     }
 
     void FixedUpdate()
     {
+        if (jonnyAnimator == null) { if (GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>() != null) { jonnyAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>(); } }
+
         //Update Object Lists:
         if (
             redSheebsInScene != GameObject.FindGameObjectsWithTag("Red_Sheeb") ||
@@ -70,33 +74,40 @@ public class Metronome : MonoBehaviour
             musicStartTime = Time.realtimeSinceStartup; //Log when music starts playing
             audioSource.Play(); //TEMP: Play audio clip
         }
-        if (Input.anyKeyDown == true)
-        {
-            /*TESTING AREA (Do not change!)*/                                                                                                                                                                                                                if (Input.GetKey(KeyCode.B) && sheebWord == null) { sheebWord = "B"; } else if (Input.GetKey(KeyCode.L) && sheebWord == "B") { sheebWord = "BL"; } else if (Input.GetKey(KeyCode.Y) && sheebWord == "BL") { sheebWord = "BLY"; } else if (Input.GetKey(KeyCode.A) && sheebWord == "BLY") { sheebWord = "BLYA"; } else if (Input.GetKey(KeyCode.T) && sheebWord == "BLYA") { sheebWord = "BLYAT"; TestThing(); }
-        }
 
         if (audioSource.isPlaying == true || forceBeat) timeSinceBeat += Time.deltaTime; //Increment beat time
         if (audioSource.isPlaying == true || forceBeat) timeSinceGrassBeat += Time.deltaTime; //Increment grassBeat
         if (audioSource.isPlaying == true || forceBeat) timeSinceOffBeat += Time.deltaTime; //Increment offBeat time
-        if (timeSinceBeat >= (beatsPerMinute/(240 * bouncesPerBeat))) //BEAT:
+        if (timeSinceBeat >= (beatsPerMinute/(60 * timeSignature)) * bouncesPerBeat) //BEAT:
         {
             timeSinceBeat = 0; //Reset time since beat
+            if (jonnyAnimator != null)
+            {
+                jonnyAnimator.SetFloat("BounceSpeed", bounceSpeed); jonnyAnimator.SetTrigger("Beat"); //Send beat to jonny
+            }
             for (int x = sheebAnimators.Count; x > 0; x--) //Send beat to sheebs
                 { sheebAnimators[x - 1].SetFloat("BounceSpeed", bounceSpeed); sheebAnimators[x - 1].SetTrigger("Beat"); }
         }
-        if (timeSinceGrassBeat >= (beatsPerMinute/(240 * grassBouncesPerBeat)))
+        if (timeSinceGrassBeat >= (beatsPerMinute / (60 * timeSignature)) * grassBouncesPerBeat)
         {
             timeSinceGrassBeat = 0;
             for (int x = grassAnimators.Count; x > 0; x--) //Send beat to grass
                 { grassAnimators[x - 1].SetFloat("BounceSpeed", grassBounceSpeed); grassAnimators[x - 1].SetTrigger("Beat"); }
         }
-        if (timeSinceOffBeat >= (beatsPerMinute/(240 * grassBouncesPerBeat))) //OFFBEAT:
+        if (timeSinceOffBeat >= (beatsPerMinute / (60 * timeSignature)) * grassBouncesPerBeat) //OFFBEAT:
         {
             timeSinceOffBeat = 0; //Reset time since offBeat
             for (int x = grassAnimators.Count; x > 0; x--) //Send offBeat to grass
                 { grassAnimators[x - 1].SetFloat("BounceSpeed", grassBounceSpeed); grassAnimators[x - 1].SetTrigger("OffBeat"); }
         }
 
+    }
+    private void Update()
+    {
+        if (Input.anyKeyDown == true)
+        {
+            /*TESTING AREA (Do not change!)*/                                                                                                                                                                                                                if (Input.GetKey(KeyCode.B) && sheebWord == null) { sheebWord = "B"; } else if (Input.GetKey(KeyCode.L) && sheebWord == "B") { sheebWord = "BL"; } else if (Input.GetKey(KeyCode.Y) && sheebWord == "BL") { sheebWord = "BLY"; } else if (Input.GetKey(KeyCode.A) && sheebWord == "BLY") { sheebWord = "BLYA"; } else if (Input.GetKey(KeyCode.T) && sheebWord == "BLYA") { sheebWord = "BLYAT"; TestThing(); }
+        }
     }
 
     private void GetSheebs() //Populates "sheeb" list with all sheebs in scene
@@ -114,7 +125,7 @@ public class Metronome : MonoBehaviour
     }
     private void TestThing()
     {
-        beatsPerMinute = 115; audioSource.Stop(); audioSource.clip = testAudio; audioSource.Play();
+        audioSource.Stop(); audioSource.clip = testAudio; audioSource.Play(); beatsPerMinute = 122; bounceSpeed = 0.7f;
         GameObject flasheeb = Instantiate(testerObject); flasheeb.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
         GameObject redtest = Instantiate(testerHerd); redtest.transform.position = new Vector3(transform.position.x, transform.position.y, -1);
         for (int x = sheebs.Count; x > 0; x--) { if (sheebs[x - 1].GetComponentInChildren<SpriteRenderer>() != null) { sheebs[x - 1].GetComponentInChildren<SpriteRenderer>().color = Color.white; } if (sheebs[x - 1].GetComponentInChildren<Animator>() != null) { sheebs[x - 1].GetComponentInChildren<Animator>().runtimeAnimatorController = Resources.Load("testanimator") as RuntimeAnimatorController; } }

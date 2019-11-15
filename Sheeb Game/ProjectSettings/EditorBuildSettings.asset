@@ -8,7 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Devon's Scene.unity
     guid: b724daa3d37ef584f8bf08b24200abb1
+  - enabled: 0
+    path: Assets/Scenes/Christian's Scene 2.unity
+    guid: 3de1d69a095fee4408d9c07b5d2e8462
+  - enabled: 0
+    path: Assets/Scenes/Christian's Scene.unity
+    guid: c3bf45eb84e6ff744be135e48cfd2a26
+  - enabled: 1
+    path: Assets/Scenes/Christian's Scene 3 (Devon Clone).unity
+    guid: 5a78f890a91508e449b228b81e46bc68
   m_configObjects: {}
