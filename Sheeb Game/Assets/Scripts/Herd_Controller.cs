@@ -94,7 +94,7 @@ public class Herd_Controller : MonoBehaviour
 
         foreach (Collider2D col in context_Cols)
         {
-            if (col != sheeb.SheebCollider && col.gameObject.tag.Contains("Sheeb"))
+            if (col != sheeb.SheebCollider && col.gameObject.tag.Contains("Sheeb") && col.transform.parent == transform)
             {
                 if (sheeb.gameObject.CompareTag("Red_Sheeb") && col.gameObject.tag.Contains("Red"))
                     s_Context.Add(col.transform);
