@@ -88,8 +88,9 @@ public class Sheep_Controller : MonoBehaviour
                         selected_Tile = hit.collider.gameObject;
 
                         hit.collider.gameObject.GetComponent<Grass_Manager>().selected = true;
-                        newTargetPosition = new Vector2(Random.Range(hit.collider.bounds.min.x, hit.collider.bounds.max.x - 2f),
-                                                        Random.Range(hit.collider.bounds.min.y + 3f, hit.collider.bounds.max.y));
+                        newTargetPosition = transform.TransformPoint(selected_Tile.transform.position);
+                        Debug.Log("Target Position: (" + newTargetPosition.x + ", " + newTargetPosition.y + ")");
+
                         commanded = true;
                     }
                 }
