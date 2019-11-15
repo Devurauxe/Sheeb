@@ -33,9 +33,6 @@ public class Grass_Manager : MonoBehaviour
     {
         foreach (Sheep_Controller sheeb in eating_Sheebs)
         {
-            if (sheeb.rb.velocity == Vector2.zero)
-                sheeb.GetComponentInChildren<Animator>().SetBool("Moving", false);
-
             Destroy(sheeb.marker);
 
             sheeb.GetComponentInChildren<Animator>().SetBool("Eating", true);
