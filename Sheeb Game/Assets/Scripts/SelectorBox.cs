@@ -99,12 +99,4 @@ public class SelectorBox : MonoBehaviour, ISelectHandler, IDeselectHandler, IPoi
         }
         currentlySelected.Clear();
     }
-
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            
-        }
-    }
 }

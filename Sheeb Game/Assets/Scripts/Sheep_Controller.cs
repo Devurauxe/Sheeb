@@ -15,7 +15,9 @@ public class Sheep_Controller : MonoBehaviour
     private float sheebScale; //How beeg a sheeb is (set at start based on transform)
     private float timeSinceDChange = 0; //The time it was last time sheeb changed direction
 
+    //variables for commanding sheebs places
     internal bool commanded;
+    private Vector3 newTargetPosition;
 
     public Collider2D SheebCollider { get { return sheeb_Collider; } } // Get method for sheeb collider
 
@@ -49,7 +51,8 @@ public class Sheep_Controller : MonoBehaviour
     // Move the sheeb forward
     public void Move(Vector2 velocity)
     {   
-        if (keep_Moving && GetComponentInChildren<Animator>().GetBool("InAir") == true && !commanded) //Animator check added for bounces
+
+        if (keep_Moving && GetComponentInChildren<Animator>().GetBool("InAir") == true) //Animator check added for bounces
         {
             transform.up = velocity;
             transform.position += (Vector3)velocity * Time.deltaTime;
@@ -62,6 +65,25 @@ public class Sheep_Controller : MonoBehaviour
                 if (velocity.x > 0) { transform.localScale = Vector3.one * sheebScale; } else { transform.localScale = new Vector3(-1, 1, 1) * sheebScale; } //Change scale (if necessary)
                 if (prevScale != transform.localScale.x) { timeSinceDChange = Time.realtimeSinceStartup; } //Increment time tracker if scale was changed
             }
+        }
+
+        if (Input.GetMouseButtonUp(1))
+        {
+            foreach(SelectorBox sheeb in SelectorBox.currentlySelected)
+            {
+                sheeb.transform.parent = null;
+
+                if(transform.parent == null)
+                {
+                    newTargetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    commanded = true;
+                }
+            }  
+        }
+
+        if (commanded && transform.parent == null)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, newTargetPosition, 1 * Time.deltaTime);
         }
     }
 
