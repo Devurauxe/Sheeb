@@ -8,6 +8,11 @@ public class Grass_Manager : MonoBehaviour
 
     public float grass_Left;
 
+    private void Update()
+    {
+        Get_Sheebs();
+    }
+
     public void Get_Sheebs()
     {
         Collider2D[] sheebs = Physics2D.OverlapBoxAll(transform.position, GetComponent<BoxCollider2D>().size, 0f);

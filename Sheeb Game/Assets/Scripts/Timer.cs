@@ -24,7 +24,10 @@ public class Timer : MonoBehaviour
 
     private void Update()
     {
-        text.text = time_Counter.ToString("00");
+        if (time_Counter < 100)
+            text.text = time_Counter.ToString("00");
+        else
+            text.text = time_Counter.ToString("000");
 
     }
 
