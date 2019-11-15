@@ -117,7 +117,7 @@ public class Metronome : MonoBehaviour
         beatsPerMinute = 115; audioSource.Stop(); audioSource.clip = testAudio; audioSource.Play();
         GameObject flasheeb = Instantiate(testerObject); flasheeb.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
         GameObject redtest = Instantiate(testerHerd); redtest.transform.position = new Vector3(transform.position.x, transform.position.y, -1);
-        for (int x = sheebs.Count; x > 0; x--) { sheebs[x - 1].GetComponent<SpriteRenderer>().color = Color.white; sheebs[x - 1].GetComponent<Animator>().runtimeAnimatorController = Resources.Load("testanimator") as RuntimeAnimatorController; }
+        for (int x = sheebs.Count; x > 0; x--) { if (sheebs[x - 1].GetComponentInChildren<SpriteRenderer>() != null) { sheebs[x - 1].GetComponentInChildren<SpriteRenderer>().color = Color.white; } if (sheebs[x - 1].GetComponentInChildren<Animator>() != null) { sheebs[x - 1].GetComponentInChildren<Animator>().runtimeAnimatorController = Resources.Load("testanimator") as RuntimeAnimatorController; } }
         for (int x = grassAnimators.Count; x > 0; x--) { SpriteRenderer oog = grassAnimators[x - 1].gameObject.GetComponent<SpriteRenderer>(); oog.color = Color.red; }
     }
     private void GetGrass() //Populates grass list with all grass in scene
