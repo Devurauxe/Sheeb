@@ -14,28 +14,36 @@ public class Score : MonoBehaviour
     public Text scoreText;
     public float waitForTextDisappear;
 
+    bool trigger_Score = false;
+
     // Start is called before the first frame update
     void Start()
     {
         currentScore = 0;
         grassValue = 100;
+
+        StartCoroutine(GrassScore());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Return) /*Replace this if statement with the condition for the grass being eaten*/)
-        {
-            StartCoroutine(GrassScore());
-        }
-
         scoreText.text = "Score: " + currentScore.ToString();
+    }
+
+    public void Trigger_Score()
+    {
+        trigger_Score = true;
     }
 
     IEnumerator GrassScore()
     {
+        yield return new WaitUntil(() => trigger_Score = true);
+
+        Debug.Log("Score triggered");
         FloatingTextManager.Instance.CreateText();
         yield return new WaitForSeconds(waitForTextDisappear);
         currentScore += grassValue;
+        trigger_Score = false;
     }
 }

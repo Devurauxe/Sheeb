@@ -7,12 +7,14 @@ public class Grass_Manager : MonoBehaviour
     internal List<Sheep_Controller> eating_Sheebs = new List<Sheep_Controller>();
     internal Animator[] grass_Tufts;
 
+    public GameObject score_Controller;
+
     public Timer timer;
 
     public bool selected;
 
     bool eat_Started;
-    bool grass_Left = true;
+    internal bool grass_Left = true;
 
     internal int eat_Speed;
 
@@ -80,6 +82,8 @@ public class Grass_Manager : MonoBehaviour
         eat_Speed = 0;
 
         timer.time_Counter += 10;
+
+        score_Controller.GetComponent<Score>().Trigger_Score();
     }
 
     public IEnumerator Grass_Eat()

@@ -101,7 +101,7 @@ public class Sheep_Controller : MonoBehaviour
                 }
             }
 
-            if (!herd_Con.target_Marked && selected_Tile != null)
+            if (!herd_Con.target_Marked && selected_Tile != null && selected_Tile.GetComponentInChildren<Grass_Manager>().grass_Left)
             {
                 Mark_Target();
                 herd_Con.target_Marked = true;
