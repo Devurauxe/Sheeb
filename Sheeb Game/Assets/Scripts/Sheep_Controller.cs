@@ -91,8 +91,10 @@ public class Sheep_Controller : MonoBehaviour
                     {
                         selected_Tile = hit.collider.gameObject;
 
+                        Vector2 selected_Center = selected_Tile.transform.position;
+
                         hit.collider.gameObject.GetComponent<Grass_Manager>().selected = true;
-                        newTargetPosition = transform.TransformPoint(selected_Tile.transform.position);
+                        newTargetPosition = selected_Center;
                         Debug.Log("Target Position: (" + newTargetPosition.x + ", " + newTargetPosition.y + ")");
 
                         commanded = true;
