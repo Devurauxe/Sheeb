@@ -21,6 +21,50 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2005088
   Exists: 1
+--- !u!114 &-8588363492404994693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
+  Exists: 1
+--- !u!114 &-8549105965396638576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Dancing Sheeb
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Dancing Sheeb
+  guid: 8e3203a11b15bc4984b0fbb3e9715e78
+  Banks:
+  - {fileID: 1704128144194507692}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 135929
 --- !u!114 &-7985326150865325533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,6 +88,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 135929
+--- !u!114 &-7852437718332337012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
+  Exists: 1
 --- !u!114 &-7777873460582382593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,6 +132,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 556
+--- !u!114 &-7373310165606362612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
+  Exists: 1
 --- !u!114 &-6471612205162569927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,7 +173,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 2005088
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6284162311744469573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +194,27 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 798
+  Exists: 1
+--- !u!114 &-6238447500377959511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
   Exists: 1
 --- !u!114 &-5839931313905506775
 MonoBehaviour:
@@ -197,6 +304,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 556
+--- !u!114 &-4833097022857217221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
+  Exists: 1
 --- !u!114 &-4726796003107721775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +390,69 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2005088
   Exists: 1
+--- !u!114 &-3980535023006331912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
+  Exists: 1
+--- !u!114 &-3657602098507558112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
+  Exists: 1
+--- !u!114 &-2870618279735779753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
+  Exists: 1
 --- !u!114 &-2870474915178588073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +476,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 135929
+--- !u!114 &-2771945458995917125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
+  Exists: 1
 --- !u!114 &-2599627037824450365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,7 +579,17 @@ MonoBehaviour:
   Path: event:/SFX/Walking
   guid: 56210bd68dbcfb4688f505ab04eb775b
   Banks:
-  - {fileID: -6471612205162569927}
+  - {fileID: -4833097022857217221}
+  - {fileID: 1218654927701404731}
+  - {fileID: -8588363492404994693}
+  - {fileID: 4176591959390684595}
+  - {fileID: -533343727848726519}
+  - {fileID: 1903541755639821850}
+  - {fileID: -3980535023006331912}
+  - {fileID: -6238447500377959511}
+  - {fileID: -2870618279735779753}
+  - {fileID: -7852437718332337012}
+  - {fileID: 5008418023500255137}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -375,6 +597,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 556
+--- !u!114 &-2155129466827403805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
+  Exists: 1
 --- !u!114 &-1765326490804487541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,7 +656,17 @@ MonoBehaviour:
   Path: event:/Music/Dancing Sheeb
   guid: 8e3203a11b15bc4984b0fbb3e9715e78
   Banks:
-  - {fileID: -6471612205162569927}
+  - {fileID: -4833097022857217221}
+  - {fileID: 1218654927701404731}
+  - {fileID: -8588363492404994693}
+  - {fileID: 4176591959390684595}
+  - {fileID: -533343727848726519}
+  - {fileID: 1903541755639821850}
+  - {fileID: -3980535023006331912}
+  - {fileID: -6238447500377959511}
+  - {fileID: -2870618279735779753}
+  - {fileID: -7852437718332337012}
+  - {fileID: 5008418023500255137}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -467,6 +720,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 556
+--- !u!114 &-533343727848726519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
+  Exists: 1
 --- !u!114 &-443524747010623569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,13 +755,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:/Users/light/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's Audio
     Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
-  SubDir: 
+  SubDir: C:/Users/light/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's Audio
+    Bin/Banks/Adaptive Sheeb/Build/Desktop
   lastModified: 637094159939836170
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 798
-  Exists: 1
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,18 +776,39 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -443524747010623569}
-  - {fileID: -6471612205162569927}
+  - {fileID: -2155129466827403805}
+  - {fileID: 5008418023500255137}
   EditorEvents:
   - {fileID: -2170339767159335624}
   - {fileID: -1555567971267929357}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -6471612205162569927}
+  - {fileID: 5008418023500255137}
   StringsBanks:
-  - {fileID: -443524747010623569}
-  stringsBankWriteTime: 637094159939836170
+  - {fileID: -2155129466827403805}
+  stringsBankWriteTime: 637094195253100509
   cacheVersion: 3
+--- !u!114 &685801985458324973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
+  Exists: 1
 --- !u!114 &737353046866087559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,6 +829,27 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 798
+  Exists: 1
+--- !u!114 &1218654927701404731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
   Exists: 1
 --- !u!114 &1268438901991925420
 MonoBehaviour:
@@ -578,6 +895,48 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 556
+--- !u!114 &1704128144194507692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
+  Exists: 1
+--- !u!114 &1903541755639821850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
+  Exists: 1
 --- !u!114 &2180830413615489863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -620,6 +979,111 @@ MonoBehaviour:
   - Name: Desktop
     Value: 798
   Exists: 1
+--- !u!114 &3389972306386907907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
+  Exists: 1
+--- !u!114 &3595405744247499909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
+  Exists: 1
+--- !u!114 &3827715291518833543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
+  Exists: 1
+--- !u!114 &3836405588595028522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
+  Exists: 1
+--- !u!114 &4176591959390684595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
+  Exists: 1
 --- !u!114 &4597658360831574866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,6 +1107,48 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 135929
+--- !u!114 &4892255518826295675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
+  Exists: 1
+--- !u!114 &5008418023500255137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094195253399687
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
+  Exists: 1
 --- !u!114 &5093271206390414849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,6 +1169,50 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 2005088
+  Exists: 1
+--- !u!114 &5563572252675157816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Walking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Walking
+  guid: 56210bd68dbcfb4688f505ab04eb775b
+  Banks:
+  - {fileID: 1704128144194507692}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 556
+--- !u!114 &5735623539664937719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
   Exists: 1
 --- !u!114 &6017599381817471861
 MonoBehaviour:
@@ -795,6 +1345,27 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 2005088
+  Exists: 1
+--- !u!114 &8718733072451865002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Hawlomancer/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's
+    Audio Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094195253100509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
   Exists: 1
 --- !u!114 &9050397771965399346
 MonoBehaviour:

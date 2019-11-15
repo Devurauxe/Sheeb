@@ -1190,7 +1190,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -1.3505344, y: -0.5716543}
@@ -1218,8 +1218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ed25756e9e6dd4fa1115f40cd22f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 8530314023051522778, guid: e01bf4294f9164f41ad687acff8cad06, type: 3}
   selected: 0
-  grass_Left: 0
 --- !u!1 &3497801083141470631
 GameObject:
   m_ObjectHideFlags: 0
