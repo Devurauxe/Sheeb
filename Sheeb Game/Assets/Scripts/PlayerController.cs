@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
 
         //Setting movement to a vector2 with horizontal and vertical movement
         movement = new Vector2(moveH, moveV);
+
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y);
     }
 
     private void FixedUpdate()

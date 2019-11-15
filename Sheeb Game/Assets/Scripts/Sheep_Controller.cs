@@ -15,31 +15,37 @@ public class Sheep_Controller : MonoBehaviour
     private float sheebScale; //How beeg a sheeb is (set at start based on transform)
     private float timeSinceDChange = 0; //The time it was last time sheeb changed direction
 
+    //variables for commanding sheebs places
+    internal bool commanded;
+    private Vector3 newTargetPosition;
+
     public Collider2D SheebCollider { get { return sheeb_Collider; } } // Get method for sheeb collider
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         // Randomly determine the sheeb's tag and color
         switch (Random.Range(0, 3))
         {
             case 0:
                 tag = "Red_Sheeb";
-                GetComponentInChildren<SpriteRenderer>().color = Color.red;
+                GetComponentInChildren<SpriteRenderer>().color = new Color32(255, 102, 102, 255);
                 break;
             case 1:
                 tag = "Blue_Sheeb";
-                GetComponentInChildren<SpriteRenderer>().color = Color.blue;
+                GetComponentInChildren<SpriteRenderer>().color = new Color32(102, 214, 255, 255);
                 break;
             case 2:
                 tag = "Green_Sheeb";
-                GetComponentInChildren<SpriteRenderer>().color = Color.green;
+                GetComponentInChildren<SpriteRenderer>().color = new Color32(102, 255, 110, 255);
                 break;
         }
 
         sheeb_Collider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         sheebScale = transform.localScale.x; //Grab arbitrary scale value from default sheeb
+
+        commanded = false;
     }
 
     // Move the sheeb forward
@@ -60,12 +66,36 @@ public class Sheep_Controller : MonoBehaviour
                 if (prevScale != transform.localScale.x) { timeSinceDChange = Time.realtimeSinceStartup; } //Increment time tracker if scale was changed
             }
         }
+
+        if (Input.GetMouseButtonUp(1))
+        {
+            foreach(SelectorBox sheeb in SelectorBox.currentlySelected)
+            {
+                sheeb.transform.parent = null;
+
+                if(transform.parent == null)
+                {
+                    newTargetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    commanded = true;
+                }
+            }  
+        }
+
+        if (commanded && transform.parent == null)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, newTargetPosition, 1 * Time.deltaTime);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Set the sheeb's to ignore the collision between other sheebs
+        // Set the sheeb's to ignore the collision between other sheebs and the player
         if (collision.gameObject.tag.Contains("Sheeb"))
             Physics2D.IgnoreCollision(sheeb_Collider, collision.collider);
+    }
+
+    public void Eat()
+    {
+
     }
 }
