@@ -36,6 +36,7 @@ public class Grass_Manager : MonoBehaviour
             if (sheeb.rb.velocity == Vector2.zero)
                 sheeb.GetComponentInChildren<Animator>().SetBool("Moving", false);
 
+            sheeb.marker = null;
             sheeb.GetComponentInChildren<Animator>().SetBool("Eating", true);
         }
     }

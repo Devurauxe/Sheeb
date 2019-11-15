@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class Sheep_Controller : MonoBehaviour
 {
+    public Herd_Controller herd_Con;
     internal Collider2D sheeb_Collider; // The sheeb's individual collider
     internal Rigidbody2D rb; // The rigidbody of the sheeb (not used currently)
 
@@ -18,6 +19,9 @@ public class Sheep_Controller : MonoBehaviour
     //variables for commanding sheebs places
     internal bool commanded;
     private Vector3 newTargetPosition;
+    public GameObject command_Marker;
+    internal GameObject marker;
+    private GameObject selected_Tile;
 
     public Collider2D SheebCollider { get { return sheeb_Collider; } } // Get method for sheeb collider
 
@@ -69,6 +73,8 @@ public class Sheep_Controller : MonoBehaviour
 
         if (Input.GetMouseButtonUp(1))
         {
+            herd_Con.target_Marked = false;
+
             foreach(SelectorBox sheeb in SelectorBox.currentlySelected)
             {
                 sheeb.transform.parent = null;
@@ -79,19 +85,32 @@ public class Sheep_Controller : MonoBehaviour
 
                     if (hit)
                     {
+                        selected_Tile = hit.collider.gameObject;
+
                         hit.collider.gameObject.GetComponent<Grass_Manager>().selected = true;
-                        newTargetPosition = new Vector2(Random.Range(hit.collider.bounds.min.x, hit.collider.bounds.max.x),
-                                                        Random.Range(hit.collider.bounds.min.y + 1f, hit.collider.bounds.max.y - 0.2f));
+                        newTargetPosition = new Vector2(Random.Range(hit.collider.bounds.min.x, hit.collider.bounds.max.x - 2f),
+                                                        Random.Range(hit.collider.bounds.min.y + 3f, hit.collider.bounds.max.y));
                         commanded = true;
                     }
                 }
-            }  
+            }
+
+            if (!herd_Con.target_Marked && selected_Tile != null)
+            {
+                Mark_Target();
+                herd_Con.target_Marked = true;
+            }
         }
 
         if (commanded && transform.parent == null && GetComponentInChildren<Animator>().GetBool("InAir"))
         {
             transform.position = Vector2.MoveTowards(transform.position, newTargetPosition, 2 * Time.deltaTime);
         }
+    }
+
+    public void Mark_Target()
+    {
+        marker = Instantiate(command_Marker, selected_Tile.transform.position, Quaternion.identity);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

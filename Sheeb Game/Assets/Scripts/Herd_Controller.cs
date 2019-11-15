@@ -33,6 +33,8 @@ public class Herd_Controller : MonoBehaviour
     private int blue_Sheeb_Count;
     private int green_Sheeb_Count;
 
+    internal bool target_Marked;
+
     // Start is called before the first frame update
     void Start()
     {
