@@ -67,6 +67,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 556
+--- !u!114 &-6471612205162569927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/light/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's Audio
+    Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637094159939795972
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2005088
+  Exists: 1
 --- !u!114 &-6284162311744469573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,6 +352,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2005088
   Exists: 1
+--- !u!114 &-2170339767159335624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Walking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Walking
+  guid: 56210bd68dbcfb4688f505ab04eb775b
+  Banks:
+  - {fileID: -6471612205162569927}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 556
 --- !u!114 &-1765326490804487541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,6 +391,29 @@ MonoBehaviour:
   guid: 8e3203a11b15bc4984b0fbb3e9715e78
   Banks:
   - {fileID: 9050397771965399346}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 135929
+--- !u!114 &-1555567971267929357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Dancing Sheeb
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Dancing Sheeb
+  guid: 8e3203a11b15bc4984b0fbb3e9715e78
+  Banks:
+  - {fileID: -6471612205162569927}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -400,6 +467,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 556
+--- !u!114 &-443524747010623569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/light/Documents/GitHub/Sheeb/Sheeb Game/Assets/Audio/Tobey's Audio
+    Bin/Banks/Adaptive Sheeb/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637094159939836170
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 798
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,12 +500,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: -443524747010623569}
+  - {fileID: -6471612205162569927}
+  EditorEvents:
+  - {fileID: -2170339767159335624}
+  - {fileID: -1555567971267929357}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  stringsBankWriteTime: 0
+  MasterBanks:
+  - {fileID: -6471612205162569927}
+  StringsBanks:
+  - {fileID: -443524747010623569}
+  stringsBankWriteTime: 637094159939836170
   cacheVersion: 3
 --- !u!114 &737353046866087559
 MonoBehaviour:
