@@ -52,7 +52,7 @@ public class Sheep_Controller : MonoBehaviour
     public void Move(Vector2 velocity)
     {   
 
-        if (keep_Moving && GetComponentInChildren<Animator>().GetBool("InAir") == true) //Animator check added for bounces
+        if (keep_Moving && GetComponentInChildren<Animator>().GetBool("InAir")) //Animator check added for bounces
         {
             transform.up = velocity;
             transform.position += (Vector3)velocity * Time.deltaTime;
@@ -75,15 +75,22 @@ public class Sheep_Controller : MonoBehaviour
 
                 if(transform.parent == null)
                 {
-                    newTargetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    commanded = true;
+                    RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector3.forward, Mathf.Infinity, 1 << LayerMask.NameToLayer("Grass"));
+
+                    if (hit)
+                    {
+                        hit.collider.gameObject.GetComponent<Grass_Manager>().selected = true;
+                        newTargetPosition = new Vector2(Random.Range(hit.collider.bounds.min.x, hit.collider.bounds.max.x),
+                                                        Random.Range(hit.collider.bounds.min.y + 1f, hit.collider.bounds.max.y - 0.2f));
+                        commanded = true;
+                    }
                 }
             }  
         }
 
-        if (commanded && transform.parent == null)
+        if (commanded && transform.parent == null && GetComponentInChildren<Animator>().GetBool("InAir"))
         {
-            transform.position = Vector2.MoveTowards(transform.position, newTargetPosition, 1 * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, newTargetPosition, 2 * Time.deltaTime);
         }
     }
 
@@ -92,10 +99,5 @@ public class Sheep_Controller : MonoBehaviour
         // Set the sheeb's to ignore the collision between other sheebs and the player
         if (collision.gameObject.tag.Contains("Sheeb"))
             Physics2D.IgnoreCollision(sheeb_Collider, collision.collider);
-    }
-
-    public void Eat()
-    {
-
     }
 }

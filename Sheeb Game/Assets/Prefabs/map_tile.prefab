@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8835694279649118376}
   - component: {fileID: 6981339176536579513}
+  - component: {fileID: 1917041525479893703}
   - component: {fileID: 414768051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: map_tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,6 +82,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1917041525479893703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668060270067221272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ed25756e9e6dd4fa1115f40cd22f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grass_Left: 100
 --- !u!61 &414768051
 BoxCollider2D:
   m_ObjectHideFlags: 0
