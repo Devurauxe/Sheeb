@@ -48,7 +48,7 @@ public class Metronome : MonoBehaviour
         GetGrass(); //Get any starting grass in scene
 
         //Initialize Offbeat
-        timeSinceOffBeat = ((beatsPerMinute/(60 * timeSignature)) * bouncesPerBeat)/2; //Start halfway towards beat marker
+        timeSinceOffBeat = (((60 * timeSignature)/beatsPerMinute) * bouncesPerBeat)/2; //Start halfway towards beat marker
     }
 
     void FixedUpdate()
@@ -78,7 +78,7 @@ public class Metronome : MonoBehaviour
         if (audioSource.isPlaying == true || forceBeat) timeSinceBeat += Time.deltaTime; //Increment beat time
         if (audioSource.isPlaying == true || forceBeat) timeSinceGrassBeat += Time.deltaTime; //Increment grassBeat
         if (audioSource.isPlaying == true || forceBeat) timeSinceOffBeat += Time.deltaTime; //Increment offBeat time
-        if (timeSinceBeat >= (beatsPerMinute/(60 * timeSignature)) * bouncesPerBeat) //BEAT:
+        if (timeSinceBeat >= ((60 * timeSignature)/beatsPerMinute) * bouncesPerBeat) //BEAT:
         {
             timeSinceBeat = 0; //Reset time since beat
             if (jonnyAnimator != null)
@@ -88,13 +88,13 @@ public class Metronome : MonoBehaviour
             for (int x = sheebAnimators.Count; x > 0; x--) //Send beat to sheebs
                 { sheebAnimators[x - 1].SetFloat("BounceSpeed", bounceSpeed); sheebAnimators[x - 1].SetTrigger("Beat"); }
         }
-        if (timeSinceGrassBeat >= (beatsPerMinute / (60 * timeSignature)) * grassBouncesPerBeat)
+        if (timeSinceGrassBeat >= ((60 * timeSignature) / beatsPerMinute) * grassBouncesPerBeat)
         {
             timeSinceGrassBeat = 0;
             for (int x = grassAnimators.Count; x > 0; x--) //Send beat to grass
                 { grassAnimators[x - 1].SetFloat("BounceSpeed", grassBounceSpeed); grassAnimators[x - 1].SetTrigger("Beat"); }
         }
-        if (timeSinceOffBeat >= (beatsPerMinute / (60 * timeSignature)) * grassBouncesPerBeat) //OFFBEAT:
+        if (timeSinceOffBeat >= ((60 * timeSignature)/beatsPerMinute) * grassBouncesPerBeat) //OFFBEAT:
         {
             timeSinceOffBeat = 0; //Reset time since offBeat
             for (int x = grassAnimators.Count; x > 0; x--) //Send offBeat to grass

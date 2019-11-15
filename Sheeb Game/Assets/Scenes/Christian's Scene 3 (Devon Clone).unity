@@ -650,7 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b199a164cbe2b08448fdf3581fda8752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grassTile: {fileID: 3497801083065723437, guid: 29b68c4e65684844f9c6a0b1c54a83c6,
+  grassTile: {fileID: 3497801083065723437, guid: 21321d24dfddae44b83609275ad589ec,
     type: 3}
   tileOffset: {x: 3.98, y: 2.38}
   tileRowOffset: 12.119
@@ -1703,9 +1703,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceBeat: 1
   startDelay: 0
-  beatsPerMinute: 115
-  timeSignature: 4
-  bouncesPerBeat: 1
+  beatsPerMinute: 109
+  timeSignature: 1
+  bouncesPerBeat: 0.9
   grassBouncesPerBeat: 1
   bounceSpeed: 1
   grassBounceSpeed: 1
