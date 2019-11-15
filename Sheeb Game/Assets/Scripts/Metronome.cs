@@ -125,6 +125,7 @@ public class Metronome : MonoBehaviour
     }
     private void TestThing()
     {
+        GameObject oogBoog = GameObject.FindGameObjectWithTag("fmod"); Destroy(oogBoog);
         audioSource.Stop(); audioSource.clip = testAudio; audioSource.Play(); beatsPerMinute = 122; bounceSpeed = 0.7f;
         GameObject flasheeb = Instantiate(testerObject); flasheeb.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
         GameObject redtest = Instantiate(testerHerd); redtest.transform.position = new Vector3(transform.position.x, transform.position.y, -1);

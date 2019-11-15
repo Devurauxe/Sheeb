@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c4344931-3ad6-4031-8297-a659aa8d529d}">
+		<property name="assetPath">
+			<value>Grass Walking 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.45389583333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{67905e04-3c88-4998-a581-448e19e604e2}</destination>
+		</relationship>
+	</object>
+</objects>
