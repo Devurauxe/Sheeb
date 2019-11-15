@@ -69,6 +69,8 @@ public class Grass_Manager : MonoBehaviour
             if (!eat_Started)
                 eat_Speed += 5;
         }
+
+        GameObject.FindGameObjectWithTag("Munch").GetComponent<Munch>().eating = true;
     }
 
     public void Stop_Eating()
@@ -78,6 +80,8 @@ public class Grass_Manager : MonoBehaviour
             sheeb.GetComponentInChildren<Animator>().SetBool("Moving", true);
             sheeb.GetComponentInChildren<Animator>().SetBool("Eating", false);
         }
+
+        GameObject.FindGameObjectWithTag("Munch").GetComponent<Munch>().eating = false;
 
         eat_Speed = 0;
 

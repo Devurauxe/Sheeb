@@ -16,6 +16,7 @@ TagManager:
   - Rainbow_Grass
   - Herd_Point
   - fmod
+  - Munch
   layers:
   - Default
   - TransparentFX
