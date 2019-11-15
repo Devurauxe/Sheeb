@@ -21,7 +21,7 @@ public class SelectorBox : MonoBehaviour, ISelectHandler, IDeselectHandler, IPoi
     private void Awake()
     {
         allMySelectables.Add(this);
-        sheebRenderer = GetComponent<SpriteRenderer>();
+        sheebRenderer = GetComponentInChildren<SpriteRenderer>();
 
         if (gameObject.CompareTag("Red_Sheeb"))
         {

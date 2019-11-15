@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class DragSelectionHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class DragSelectionHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
-    [SerializeField]
-    Image selectionBoxImage;
+    public Image selectionBoxImage;
 
     Vector2 startPosition;
     Rect selectionRect;
@@ -60,6 +59,40 @@ public class DragSelectionHandler : MonoBehaviour, IBeginDragHandler, IDragHandl
             {
                 selectable.OnSelect(eventData);
             }
+        }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+
+        float distance = 0;
+
+        foreach(RaycastResult result in results)
+        {
+            if(result.gameObject == gameObject)
+            {
+                distance = result.distance;
+                break;
+            }
+        }
+
+        GameObject nextObject = null;
+        float maxDistance = Mathf.Infinity;
+
+        foreach(RaycastResult result in results)
+        {
+            if(result.distance > distance && result.distance < maxDistance)
+            {
+                nextObject = result.gameObject;
+                maxDistance = result.distance;
+            }
+        }
+
+        if (nextObject)
+        {
+            ExecuteEvents.Execute<IPointerClickHandler>(nextObject, eventData, (x, y) => { x.OnPointerClick((PointerEventData)y); });
         }
     }
 }
