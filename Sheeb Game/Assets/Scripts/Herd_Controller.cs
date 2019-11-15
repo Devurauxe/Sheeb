@@ -110,6 +110,42 @@ public class Herd_Controller : MonoBehaviour
         return s_Context;
     }
 
+    public void Spawn_Sheeb(Vector2 position)
+    {
+        Sheep_Controller sheeb = Instantiate(sheebPrefab, position, Quaternion.Euler(Vector3.forward * Random.Range(0f, 360f)), transform);
+        sheebs.Add(sheeb);
+
+        // Randomly determine the sheeb's tag and color
+        switch (Random.Range(0, 3))
+        {
+            case 0:
+                sheeb.tag = "Red_Sheeb";
+                sheeb.GetComponentInChildren<SpriteRenderer>().color = new Color32(255, 102, 102, 255);
+                break;
+            case 1:
+                sheeb.tag = "Blue_Sheeb";
+                sheeb.GetComponentInChildren<SpriteRenderer>().color = new Color32(102, 214, 255, 255);
+                break;
+            case 2:
+                sheeb.tag = "Green_Sheeb";
+                GetComponentInChildren<SpriteRenderer>().color = new Color32(102, 255, 110, 255);
+                break;
+        }
+
+        switch (sheeb.tag)
+        {
+            case "Red_Sheeb":
+                red_Sheeb_Count++;
+                break;
+            case "Blue_Sheeb":
+                blue_Sheeb_Count++;
+                break;
+            case "Green_Sheeb":
+                green_Sheeb_Count++;
+                break;
+        }
+    }
+
     void Check_Herd()
     {
         foreach (Sheep_Controller sheeb in sheebs)

@@ -7,10 +7,14 @@ public class Grass_Manager : MonoBehaviour
     internal List<Sheep_Controller> eating_Sheebs = new List<Sheep_Controller>();
     internal Animator[] grass_Tufts;
 
+    public Timer timer;
+
     public bool selected;
 
     bool eat_Started;
     bool grass_Left = true;
+
+    internal int eat_Speed;
 
     private void Start()
     {
@@ -25,7 +29,7 @@ public class Grass_Manager : MonoBehaviour
 
         foreach (Animator grass in grass_Tufts)
         {
-            if (grass.GetInteger("Health") <= 0)
+            if (grass.GetInteger("Health") <= 0 && grass_Left)
             {
                 grass_Left = false;
                 eat_Started = false;
@@ -59,6 +63,9 @@ public class Grass_Manager : MonoBehaviour
 
             sheeb.GetComponentInChildren<Animator>().SetBool("Moving", false);
             sheeb.GetComponentInChildren<Animator>().SetBool("Eating", true);
+
+            if (!eat_Started)
+                eat_Speed += 5;
         }
     }
 
@@ -69,6 +76,10 @@ public class Grass_Manager : MonoBehaviour
             sheeb.GetComponentInChildren<Animator>().SetBool("Moving", true);
             sheeb.GetComponentInChildren<Animator>().SetBool("Eating", false);
         }
+
+        eat_Speed = 0;
+
+        timer.time_Counter += 10;
     }
 
     public IEnumerator Grass_Eat()
@@ -81,7 +92,7 @@ public class Grass_Manager : MonoBehaviour
 
             foreach (Animator grass_T in grass_Tufts)
             {
-                grass_T.SetInteger("Health", grass_T.GetInteger("Health") - 20);
+                grass_T.SetInteger("Health", grass_T.GetInteger("Health") - eat_Speed);
             }
         }
     }

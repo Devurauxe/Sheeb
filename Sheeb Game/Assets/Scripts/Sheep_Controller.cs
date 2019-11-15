@@ -25,7 +25,6 @@ public class Sheep_Controller : MonoBehaviour
 
     public Collider2D SheebCollider { get { return sheeb_Collider; } } // Get method for sheeb collider
 
-    // Start is called before the first frame update
     void Awake()
     {
         // Randomly determine the sheeb's tag and color
