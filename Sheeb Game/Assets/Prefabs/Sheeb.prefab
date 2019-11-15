@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1879706915705078956}
   - component: {fileID: 5480228439419568895}
   - component: {fileID: 4683471394525541651}
+  - component: {fileID: 3437692844369941042}
   m_Layer: 0
   m_Name: Sheeb Sprite
   m_TagString: Untagged
@@ -114,6 +115,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3437692844369941042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4204760937407688227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f7cefcc7e48134ea9c118d93316073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7160897783750875120
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +140,7 @@ GameObject:
   - component: {fileID: 804635608457479165}
   - component: {fileID: 4860210979101344028}
   - component: {fileID: -290685783503284723}
+  - component: {fileID: 3483306059793077716}
   m_Layer: 0
   m_Name: Sheeb
   m_TagString: Untagged
@@ -213,5 +227,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edde95af78ff10e488badd5c56fa1ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3483306059793077716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160897783750875120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f7cefcc7e48134ea9c118d93316073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

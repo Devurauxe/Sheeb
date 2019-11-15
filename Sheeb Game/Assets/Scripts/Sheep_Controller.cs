@@ -52,6 +52,11 @@ public class Sheep_Controller : MonoBehaviour
         commanded = false;
     }
 
+    private void Update()
+    {
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y); //Simulate depth
+    }
+
     // Move the sheeb forward
     public void Move(Vector2 velocity)
     {   
@@ -61,8 +66,7 @@ public class Sheep_Controller : MonoBehaviour
             transform.up = velocity;
             transform.position += (Vector3)velocity * Time.deltaTime;
 
-            //Visual Positional Update:
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y); //Simulate depth
+            //Visual Positional Update
             if (changeDirectionTime <= (Time.realtimeSinceStartup - timeSinceDChange))
             {
                 float prevScale = transform.localScale.x; //Initialize memory variable

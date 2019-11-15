@@ -1703,7 +1703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceBeat: 1
   startDelay: 0
-  beatsPerMinute: 109
+  beatsPerMinute: 110
   timeSignature: 1
   bouncesPerBeat: 0.9
   grassBouncesPerBeat: 1
